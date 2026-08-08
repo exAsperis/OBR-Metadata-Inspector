@@ -1,0 +1,16 @@
+{
+  "name": "OBR Metadata Inspector",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "description": "Inspect and edit metadata throughout an Owlbear Rodeo room.",
+  "author": "ex Asperis",
+  "homepage_url": "https://github.com/exAsperis/OBR-Metadata-Inspector",
+  "icon": "/OBR-Metadata-Inspector/icon.svg",
+  "action": {
+    "title": "OBR Metadata Inspector",
+    "icon": "/OBR-Metadata-Inspector/icon.svg",
+    "popover": "/OBR-Metadata-Inspector/",
+    "width": 440,
+    "height": 650
+  }
+}
