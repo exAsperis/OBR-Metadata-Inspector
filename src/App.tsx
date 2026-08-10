@@ -87,7 +87,7 @@ export default function App() {
   const selectedValue = edit ? getAtPath(edit.baselineRoot, edit.selection.path) : null;
   const canAdd = selectedSource?.editable && selectedValue !== null && typeof selectedValue === "object";
   return <main className="app-shell">
-    <header className="app-header"><div><span className="eyebrow">Owlbear Rodeo</span><h1>Metadata Inspector</h1></div><button className="secondary-button" disabled={refreshing || saving} onClick={() => void refresh()}>{refreshing ? "Refreshing…" : "Refresh"}</button></header>
+    <header className="app-header"><h1>Metadata Inspector</h1><button className="secondary-button" disabled={refreshing || saving} onClick={() => void refresh()}>{refreshing ? "Refreshing…" : "Refresh"}</button></header>
     <div className="search-row"><label className="search-control"><span aria-hidden="true">⌕</span><input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search names, paths, types, values" aria-label="Search metadata" /></label></div>
     {notice && <div className="notice" role="status">{notice}</div>}
     <SourceTree sources={sources} query={query} selection={edit?.selection ?? null} onSelect={choose} />
@@ -102,6 +102,6 @@ export default function App() {
         <div className="editor-actions"><button className="secondary-button" disabled={!dirty || saving} onClick={revert}>Revert</button><button className="secondary-button" disabled={!canAdd || saving} onClick={add}>Add child</button><button className="danger-button" disabled={!selectedSource.editable || saving} onClick={() => void remove()}>Delete</button><button disabled={!selectedSource.editable || !dirty || Boolean(validation) || saving} onClick={() => void commit()}>{saving ? "Saving…" : "Save"}</button></div>
       </> : <div className="editor-empty"><span aria-hidden="true">⌘</span><strong>Select a metadata source or value</strong><small>Its complete JSON value will appear here.</small></div>}
     </section>
-    <footer>GM only · No external requests · Changes apply directly to Owlbear Rodeo</footer>
+    <footer>v1.0.0 · GM only · No external requests · Changes apply directly to Owlbear Rodeo</footer>
   </main>;
 }
