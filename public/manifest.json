@@ -5,11 +5,11 @@
   "description": "Inspect and edit metadata throughout an Owlbear Rodeo room.",
   "author": "ex Asperis",
   "homepage_url": "https://github.com/exAsperis/OBR-Metadata-Inspector",
-  "icon": "/OBR-Metadata-Inspector/icon.svg",
+  "icon": "https://obr-metadata-inspector.ex-asperis.com/icon.svg",
   "action": {
     "title": "OBR Metadata Inspector",
-    "icon": "/OBR-Metadata-Inspector/icon.svg",
-    "popover": "/OBR-Metadata-Inspector/",
+    "icon": "https://obr-metadata-inspector.ex-asperis.com/icon.svg",
+    "popover": "https://obr-metadata-inspector.ex-asperis.com/",
     "width": 440,
     "height": 650
   }

@@ -22,6 +22,6 @@ Add `http://localhost:5173/manifest.json` as a development extension in Owlbear 
 
 ## Production
 
-`npm run build` creates the static extension in `dist/`. The manifest is configured for the `/OBR-Metadata-Inspector/` GitHub Pages path.
+`npm run build` creates the static extension in `dist/`. The production manifest points to `https://obr-metadata-inspector.ex-asperis.com/`, which is deployed through Azure Static Web Apps.
 
 This independent extension is not affiliated with or endorsed by Owlbear Rodeo.
